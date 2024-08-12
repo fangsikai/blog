@@ -11,14 +11,6 @@ author: Fang.sikai
 language: en
 timezone: ''
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://fangsikai.github.io/blog/
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -99,8 +91,23 @@ ignore:
 theme: anzhiyu
 
 # Deployment
+#ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIATohFGJpWLTXM92bOpAfPgVxYRlAxcxVxhQudFUBKD/ 15920372641@139.com
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo : https://github.com/fangsikai/blog.git
-  branch: master
+  repo: git@github.com:fangsikai/blog.git
+  branch: cloudflare
+  #branch: master
+# URL
+# 1、发布cloudflare，deploy的branch 对应cloudflare分支；2、url对应配置的域名地址： https://www.fangsikai.com
+# 2、发布github，deploy的branch 对应master分支；2、url对应配置的域名地址： ttps://fangsikai.github.io/blog
+# 3、分别执行2次
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+
+#url: https://fangsikai.github.io/blog
+url: https://www.fangsikai.com
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
