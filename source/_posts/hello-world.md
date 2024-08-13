@@ -11,6 +11,10 @@ categories:
   - 技术 
   - 阅读
   - 生活
+# top_img: false
+# top_img: https://img02.anheyu.com/adminuploads/1/2022/09/05/6315e146a8bbd.webp
+cover: https://img02.anheyu.com/adminuploads/1/2022/09/05/6315e146a8bbd.webp
+thumbnail : https://img02.anheyu.com/adminuploads/1/2022/09/05/6315e146a8bbd.webp
 ---
 
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
