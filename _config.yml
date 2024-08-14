@@ -97,16 +97,16 @@ theme: anzhiyu
 deploy:
   type: git
   repo: git@github.com:fangsikai/blog.git
-  branch: cloudflare
-  #branch: master
+  #branch: cloudflare
+  branch: master
 # URL
 # 1、发布cloudflare，deploy的branch 对应cloudflare分支；2、url对应配置的域名地址： https://www.fangsikai.com
 # 2、发布github，deploy的branch 对应master分支；2、url对应配置的域名地址： ttps://fangsikai.github.io/blog
 # 3、分别执行2次
 # 图：http://103.10.87.21:8089/index.php
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-#url: https://fangsikai.github.io/blog
-url: https://www.fangsikai.com
+url: https://fangsikai.github.io/blog
+#url: https://www.fangsikai.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
