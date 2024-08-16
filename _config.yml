@@ -98,7 +98,6 @@ aplayer:
   asset_inject: false
 
 # Deployment
-#ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIATohFGJpWLTXM92bOpAfPgVxYRlAxcxVxhQudFUBKD/ 15920372641@139.com
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
