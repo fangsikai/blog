@@ -13,7 +13,7 @@ cover: https://img.fangsikai.com/i/2024/08/30/ua8phx.png
 
 ###  下载依赖
 
-``` shell
+``` bash
 yum update -y
 yum install -y perl-IPC-Cmd
 yum install -y openssl openssl-devel
@@ -24,11 +24,11 @@ yum install -y wget
 
 ### 下载安装包
 
-``` shell
+``` bash
 wget https://github.com/openssl/openssl/releases/download/openssl-3.1.1/openssl-3.1.1.tar.gz
 ```
 
-``` shell
+``` bash
 
 # 解压
 tar -zxvf openssl-3.1.1.tar.gz
@@ -53,7 +53,7 @@ ldconfig -v
 
 ```
 ### 查看版本
-``` shell
+``` bash
 
 openssl version
 
