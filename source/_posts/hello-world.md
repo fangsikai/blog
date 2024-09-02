@@ -2,7 +2,7 @@
 title: Hello World 建站 hexo+github+cloundflare
 date: 2024-08-08 18:00:00
 tags:
-  - 软件
+  - 建站
 categories:
   - 技术 
 # top_img: false
