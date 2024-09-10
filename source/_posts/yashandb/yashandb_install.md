@@ -75,10 +75,13 @@ chmod -w /etc/sudoers
 ```
 ### 五、执行安装过程
 
-#### 1、以yashan的账户登录，创建inst 目录，并解压tar zxf yashandb-personal-23.2.3.100-linux-x86_64.tar.gz
+#### 1、以yashan的账户登录，创建inst 目录
+``` bash
+解压:  tar zxf yashandb-personal-23.2.3.100-linux-x86_64.tar.gz
 
-
-#### 2、在inst 目录执行生成部署文件，主要给/home/yashan/yasdb_data、/home/yashan/yasdb_home 授权
+```
+#### 2、在inst 目录执行生成部署文件
+注意给/home/yashan/yasdb_data、/home/yashan/yasdb_home 授权
 
 ``` bash
 
@@ -343,7 +346,7 @@ Enter password for SYS:
 
 ```
 
-#### 6、yasql连接接数据库并查询
+#### 7、yasql连接接数据库并查询
 
 ``` sql 
 [yashan@localhost instance]$ yasql sys/fang!@#123
@@ -373,7 +376,7 @@ OPEN
 ```
 
 
-#### 7、关闭/启动数据库
+#### 8、关闭/启动数据库
 
 ``` sql
 --- 关机
@@ -445,7 +448,7 @@ task completed, status: SUCCESS
 
 
 ```
-#### 8、客户端无法链接数据库实例办法
+### 六、客户端无法连接数据库
 ``` shell
 a、查看端口情况：lsof -i:1688
 [root@localhost yasdb_data]# lsof -i:1688
