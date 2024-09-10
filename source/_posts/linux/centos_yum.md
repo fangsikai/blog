@@ -3,7 +3,7 @@ title: 在 CentOS 7 中更新 yum 源
 date: 2024-08-30 18:00:00
 tags:
   - Linux
-  - OpenSSL
+  - Yum
 categories:
   - 技术 
 cover: https://img.fangsikai.com/i/2024/08/30/12gfsnx.jpg
