@@ -6,7 +6,7 @@ tags:
   - OpenSSL
 categories:
   - 技术 
-cover: https://img.fangsikai.com/i/2024/08/30/ua8phx.png
+cover: https://img.fangsikai.icu/i/2024/08/30/ua8phx.png
 # thumbnail : https://img.fangsikai.com/i/2024/08/14/if9nmn.webp
 ---
 

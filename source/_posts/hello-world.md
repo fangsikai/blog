@@ -7,8 +7,8 @@ categories:
   - 技术 
 # top_img: false
 # top_img: https://img02.anheyu.com/adminuploads/1/2022/09/05/6315e146a8bbd.webp
-cover: https://img.fangsikai.com/i/2024/09/02/hfsnjx.png
-thumbnail : https://img.fangsikai.com/i/2024/08/14/if9nmn.webp
+cover: https://img.fangsikai.icu/i/2024/09/02/hfsnjx.png
+thumbnail : https://img.fangsikai.icu/i/2024/08/14/if9nmn.webp
 ---
 
 # 使用github+cloundflare+hexo 建站

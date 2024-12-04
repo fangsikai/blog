@@ -7,8 +7,8 @@ categories:
   - 技术 
 # top_img: false
 # top_img: https://img02.anheyu.com/adminuploads/1/2022/09/05/6315e146a8bbd.webp
-cover: https://img.fangsikai.com/i/2024/09/10/pangpm.png
-thumbnail : https://img.fangsikai.com/i/2024/09/10/pangpm.png
+cover: https://img.fangsikai.icu/i/2024/09/10/pangpm.png
+thumbnail : https://img.fangsikai.icu/i/2024/09/10/pangpm.png
 ---
 
 ### 一、yashan 数据库&环境信息
@@ -448,7 +448,30 @@ task completed, status: SUCCESS
 
 
 ```
-### 六、客户端无法连接数据库
+### 六、开机启动问题
+``` shell
+
+## 手动启动
+$ cd /home/yashan/install
+## 守护进程用于持续监控YashanDB的各进程状态
+$ ./bin/yasboot monit start --cluster yashandb
+## 启动yasom进程: 运维服务进程
+$ yasboot process yasom start -c yashandb
+## 启动yasagent进程: 无状态运维服务进程
+$ yasboot process yasagent start -c yashandb
+## 启动数据建库:yasdb为YashanDB的主进程，启动数据库实例后，系统中可监控到此进程。
+$ yasboot cluster start -c yashandb
+
+##注册开机自启动
+$ sudo vim /etc/rc.local
+
+$ su yashan -c '/data/yashan/yasdb_home/yashandb/23.1.100/ext/monit/monit -c /data/yashan/yasdb_home/yashandb/23.1.100/ext/monit/monitrc'
+
+sudo chmod +x /etc/rc.d/rc.local
+
+```
+
+### 七、客户端无法连接数据库
 ``` shell
 a、查看端口情况：lsof -i:1688
 [root@localhost yasdb_data]# lsof -i:1688
