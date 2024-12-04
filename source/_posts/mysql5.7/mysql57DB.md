@@ -1,6 +1,6 @@
 ---
 title: MYSQL5.7 通过frm、ibd还原数据库
-date: 2024-12-303 18:00:00
+date: 2024-12-04 11:30:00
 tags:
   - 数据库
 categories:
@@ -20,6 +20,8 @@ thumbnail : https://img.fangsikai.icu/i/2024/09/10/pangpm.png
 情况：由于使用微信迁移C盘，导致数据库服务中断，使用原msi文件进行安装部署，无法安装成功。
 
 思路：使用绿色版数据库进行安装，下载好MYSQL5.7.17，由于关键文件ibdata1缺失，只有frm、ibd文件，
+
+故可以用MySQL Utilities工具进行还原数据库。
 
 
 下载地址：
